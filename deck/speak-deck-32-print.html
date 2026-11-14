@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>The Speak Software Deck — 32 cards (print & cut)</title>
+<style>
+.card { padding: 0; }
+.art { position: relative; height: 21mm; flex: none; }
+.art .img { position: absolute; inset: 0; background-image: var(--ill); background-size: cover;
+  background-position: center; filter: grayscale(1) sepia(1) saturate(2.6) hue-rotate(var(--h)) brightness(.92) contrast(1.05); }
+.art .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,14,16,.30), rgba(12,14,16,.82)); }
+.art .top { position: absolute; left: 0; right: 0; top: 0; padding: 2.2mm 3.5mm;
+  display: flex; align-items: center; justify-content: space-between; }
+.art .chip { background: rgba(12,14,16,.55); }
+.art .num { color: rgba(255,255,255,.85); }
+.body { flex: 1; padding: 2.6mm 4mm 3mm; display: flex; flex-direction: column; min-height: 0; }
+.line { color: #6b5a35; }
+.card.cover-art { border-style: solid; border-color: #10243e; position: relative; padding: 0; }
+.cover-art .cimg { position: absolute; inset: 0; background-image: url('../assets/art/cover.png');
+  background-size: cover; background-position: center; filter: brightness(.9); }
+.cover-art .cshade { position: absolute; inset: 0; background: linear-gradient(200deg, rgba(10,11,14,.25) 0%, rgba(10,11,14,.60) 55%, rgba(10,11,14,.93) 100%); }
+.cover-art .cov { position: relative; margin-top: auto; padding: 4mm; display: flex; flex-direction: column; height: 100%; }
+
+.card .title { font-size: 10.5pt; }
+.card p.a, .card p.b { font-size: 7.3pt; line-height: 1.27; }
+.card .line { font-size: 7.6pt; }
+
+.card.department { --c: #8A6A1F; }
+.card.speak { --c: #4E9BC8; }
+.card.verify { --c: #B54A36; }
+.card.guard { --c: #2F6B5E; }
+.card.taste { --c: #6B4E5F; }
+.card.run { --c: #4E5D6B; }
+.chip { background: var(--c); }
+.card { border-color: #b8b6ad; }
+</style></head><body>
+<div class="no-print">
+<strong>Print setup:</strong> A4 &middot; scale <strong>100% / Actual size</strong> &middot; background graphics: on.
+Then cut along the dashed lines. 8 cards per page, 5 pages — the first card is the deck cover.
+Free to print and share; not for resale. This is not a sales document.
+<button onclick="window.print()">Print</button>
+</div>
+<div class="sheet"><div class="card cover-art"><div class="cimg"></div><div class="cshade"></div><div class="cov">
+<div class="kicker">A DECK OF BLUEPRINTS, NOT KEYSTROKES</div><h1>The Speak Software Deck</h1><div class="sub">32 cards of code discipline for people who will never hand-write code: specify, verify, guard, taste, run.</div>
+<div class="tag">You describe. It builds. You decide whether it's true.</div></div></div>
+<div class="card meta">
+<div class="top"><span class="chip">CARD</span><span class="num">01 / 32</span></div>
+<h2 class="title">The intern</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The agent announces, in fluent confident prose, that the thing it just made works — when it does not.</p>
+<div class="lbl">THE MOVE</div><p class="b">Treat one agent as an intern who has read everything ever published, works in seconds, costs pennies, never sleeps — and has zero judgement about your business, no memory beyond this conversation, and no shame about inventing facts.</p>
+<p class="line">Confidence and correctness are different qualities. The intern has only the first.</p></div>
+<div class="card meta">
+<div class="top"><span class="chip">CARD</span><span class="num">02 / 32</span></div>
+<h2 class="title">The repository rule</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Work happens in chats, and chats evaporate. What isn&#x27;t recorded cannot be checked, handed over, or resumed.</p>
+<div class="lbl">THE MOVE</div><p class="b">A repository is the department&#x27;s filing cabinet. A manager needs four things: a repository, a way to brief, a way to check, and a record of decisions.</p>
+<p class="line">If it is not in the repository, it does not exist.</p></div>
+<div class="card meta">
+<div class="top"><span class="chip">CARD</span><span class="num">03 / 32</span></div>
+<h2 class="title">The specialist</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Every session re-explains the same preferences, standards and decisions — a tax paid in every chat, forever.</p>
+<div class="lbl">THE MOVE</div><p class="b">A folder of markdown instructions in the repository, read at the start of every session: standards, decisions, the never-list. AGENTS.md is the front door. One topic, one file, one ruling. When behaviour is wrong, fix the file, not the agent.</p>
+<p class="line">Re-explaining is the tax. The context folder abolishes it.</p></div>
+<div class="card meta">
+<div class="top"><span class="chip">CARD</span><span class="num">04 / 32</span></div>
+<h2 class="title">The filing cabinet</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Skills kept in an agent&#x27;s memory, or in one person&#x27;s prompting habits, are favours that expire.</p>
+<div class="lbl">THE MOVE</div><p class="b">One skill, one folder: when to use it, inputs, procedure, never, done means. Precision belongs in scripts; judgement belongs in the markdown. And appoint a librarian: once a quarter, read the whole cabinet, because skills drift.</p>
+<p class="line">The most sophisticated AI orchestration is a well-organised folder.</p></div>
+<div class="card meta">
+<div class="top"><span class="chip">CARD</span><span class="num">05 / 32</span></div>
+<h2 class="title">The mini CEO&#x27;s four duties</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The job feels like it should be reading every line the department produces. At AI volume that was always a fantasy.</p>
+<div class="lbl">THE MOVE</div><p class="b">Set the standard before the work. Build systems that enforce the standard. Judge the results — evidence, not code. Own the outcomes, including when the department is out of its depth. Notice what is missing from that list: heroics.</p>
+<p class="line">Delegation is not absolution.</p></div>
+<div class="card speak">
+<div class="top"><span class="chip">SPEAK</span><span class="num">06 / 32</span></div>
+<h2 class="title">The spec is the program</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The brief lives in a conversation, so the real program is the chat history — which no one can rerun.</p>
+<div class="lbl">THE MOVE</div><p class="b">Close the gaps in a written spec. Test it with the replication test: would a stranger, with only this document, produce the same thing? If the answer depends on the conversation you had before the document, the document is not the program. The conversation was.</p>
+<p class="line">Prompting is improvisation. Specification is authorship.</p></div>
+<div class="card speak">
+<div class="top"><span class="chip">SPEAK</span><span class="num">07 / 32</span></div>
+<h2 class="title">Done means</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">&quot;Done&quot; left undefined gets defined by whoever is asked — usually the agent, optimistically.</p>
+<div class="lbl">THE MOVE</div><p class="b">SPEC.md carries a &quot;done means&quot; section written as runnable checkboxes, each checkable by a specific action. Words like nice, clean, user-friendly and robust are not done; they are wishes.</p>
+<p class="line">Done is undefined until it is runnable.</p></div></div><div class="sheet"><div class="card speak">
+<div class="top"><span class="chip">SPEAK</span><span class="num">08 / 32</span></div>
+<h2 class="title">The hostile read</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Your own spec reads clearly to you because you have the conversation in your head.</p>
+<div class="lbl">THE MOVE</div><p class="b">Read your spec hunting for the word &quot;it&quot; and any word you would have to gesture at to explain. Every one is a gap. Replace it with the example that would settle a disagreement.</p>
+<p class="line">Every gesture-word is a gap.</p></div>
+<div class="card speak">
+<div class="top"><span class="chip">SPEAK</span><span class="num">09 / 32</span></div>
+<h2 class="title">Wishes into checks</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">&quot;Should handle bad input&quot; feels like a requirement, but nothing can pass or fail it.</p>
+<div class="lbl">THE MOVE</div><p class="b">Rewrite each wish as an observable check: &quot;Submitting an empty form shows an error and nothing is sent.&quot; The whole discipline of this deck is turning wishes into checks.</p>
+<p class="line">The whole discipline is turning wishes into checks.</p></div>
+<div class="card speak">
+<div class="top"><span class="chip">SPEAK</span><span class="num">10 / 32</span></div>
+<h2 class="title">What you said, what you meant</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The agent takes the brief literally, and literally is never what you meant. A vague brief run three times produces three different products.</p>
+<div class="lbl">THE MOVE</div><p class="b">Write the spec first, then brief. The AI knows what you said; the spec is where you say what you meant.</p>
+<p class="line">The AI knows what you said. It does not know what you meant.</p></div>
+<div class="card verify">
+<div class="top"><span class="chip">VERIFY</span><span class="num">11 / 32</span></div>
+<h2 class="title">The demo illusion</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">&quot;It works&quot; — one path through the software, walked once, by the person who already knows where the stepping stones are.</p>
+<div class="lbl">THE MOVE</div><p class="b">Software is done when the paths you never imagined have been tried, not when one path works.</p>
+<p class="line">&#x27;It works&#x27; is the beginning of the sentence, not the end.</p></div>
+<div class="card verify">
+<div class="top"><span class="chip">VERIFY</span><span class="num">12 / 32</span></div>
+<h2 class="title">Receipts</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The agent reports success in the same confident voice whether or not the thing works.</p>
+<div class="lbl">THE MOVE</div><p class="b">Demand three-part receipts for every acceptance item: the exact command run, the exact output observed, and PASS or FAIL against the checklist. No summaries. Nothing marked PASS that was not actually run in the conversation.</p>
+<p class="line">The explanation is not the evidence.</p></div>
+<div class="card verify">
+<div class="top"><span class="chip">VERIFY</span><span class="num">13 / 32</span></div>
+<h2 class="title">Check one at random</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The agent will sometimes report a pass that is not real — and a report you spot-check occasionally keeps every report honest.</p>
+<div class="lbl">THE MOVE</div><p class="b">Pick one receipt at random and rerun the command yourself, every session. The spot-check is cheap; the habit is the control.</p>
+<p class="line">Check one at random. Every time.</p></div>
+<div class="card verify">
+<div class="top"><span class="chip">VERIFY</span><span class="num">14 / 32</span></div>
+<h2 class="title">The fake test</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The agent&#x27;s checks can be wrong in the agent&#x27;s favour: too few cases, a fake-defeatable comparison, an expected value copied from the program&#x27;s output instead of the spec.</p>
+<div class="lbl">THE MOVE</div><p class="b">Ask of every check: would it still pass if the product were replaced with a hardcoded fake that prints the expected answers? Rewrite any check that a fake could defeat so it tests the real behaviour.</p>
+<p class="line">A check that a fake could pass is checking nothing.</p></div>
+<div class="card verify">
+<div class="top"><span class="chip">VERIFY</span><span class="num">15 / 32</span></div>
+<h2 class="title">&quot;It sounds right&quot;</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Fluency and accuracy are different axes, and fluency is the one that gets trusted.</p>
+<div class="lbl">THE MOVE</div><p class="b">Trust first — trusting is cheap. Verify always — confidence is not evidence. Run it on a known input; explain how it works in your own words; poke an edge case the agent did not mention.</p>
+<p class="line">&#x27;It sounds right&#x27; is the most expensive sentence in AI-assisted work.</p></div></div><div class="sheet"><div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">16 / 32</span></div>
+<h2 class="title">The blast radius</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Process gets decided by enthusiasm at the start and regret at the end, instead of by two questions.</p>
+<div class="lbl">THE MOVE</div><p class="b">Ask: what is the blast radius if this breaks silently at the worst moment — and how long will it live? Low stakes, short life: check the output and vibe on. Anything real users touch, that stores data, that someone depends on: reviewed, tested, explained. No black boxes.</p>
+<p class="line">Radius, not language or framework, decides how much process you owe.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">17 / 32</span></div>
+<h2 class="title">Managed vibe coding</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Vibe coding gets treated as either a sin or a lifestyle, when it is a gear selection.</p>
+<div class="lbl">THE MOVE</div><p class="b">Vibe coding is legitimate for prototypes with a small blast radius. Production code written by AI gets a higher bar than human code — it arrives with no context, so it must prove itself entirely through checks — met with guardrails, not heroics.</p>
+<p class="line">Vibe coding is one gear in a car that also has brakes, mirrors, and a licence.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">18 / 32</span></div>
+<h2 class="title">The five gates</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">You cannot read every line the department writes, so quality depends on stamina — and stamina loses.</p>
+<div class="lbl">THE MOVE</div><p class="b">Every change passes the same five gates in the same order, whether you made it or the agent did: style and obvious errors, behaviour tests, a coverage floor, a forgotten-promises sweep, and a change-size budget.</p>
+<p class="line">You cannot read every line. You can refuse to ship without a gate.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">19 / 32</span></div>
+<h2 class="title">Commission the gate</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">A gate built by the agent that nobody can explain gets silently disabled the first time it inconveniences anyone — which is slop defending itself.</p>
+<div class="lbl">THE MOVE</div><p class="b">Have the agent build the gate script from your spec, then read it once: you should be able to explain every gate in one sentence. If not, send it back — &quot;explain each gate, then simplify.&quot;</p>
+<p class="line">A gate nobody understands gets disabled.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">20 / 32</span></div>
+<h2 class="title">Tune the budget, keep the gate</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The thresholds (80% coverage, five TODOs, 400 changed lines) are starting points — and the first emergency argues them down quietly.</p>
+<div class="lbl">THE MOVE</div><p class="b">Tighten thresholds when the department earns it. Never widen them silently to let one change through; if it must be done, it happens in a commit that says so.</p>
+<p class="line">Widening the gate to pass a change is the exact move this deck exists to prevent.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">21 / 32</span></div>
+<h2 class="title">The flight recorder</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Fear of breaking things keeps the department moving in half-steps, and the fear never gets tested.</p>
+<div class="lbl">THE MOVE</div><p class="b">Commit, branch, revert — three moves. One policy: if you can describe the change in one sentence, commit it in one sentence; if you cannot, split it. Run the fire drill until &quot;we can always go back&quot; is something you believe, because you have personally done it.</p>
+<p class="line">One wrong move ruins nothing, if everything is recorded.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">22 / 32</span></div>
+<h2 class="title">The three secrets</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Credentials, personal data and marked-confidential material enter prompts one rushed paste at a time.</p>
+<div class="lbl">THE MOVE</div><p class="b">Three categories never enter any prompt. Redact first, then paste — no blast-radius argument rescues them. And a key that was ever committed gets removed from history, not just deleted from the file. An unused key is an unlocked door: retire access on handover.</p>
+<p class="line">An unused key is an unlocked door.</p></div>
+<div class="card guard">
+<div class="top"><span class="chip">GUARD</span><span class="num">23 / 32</span></div>
+<h2 class="title">Slopsquatting</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The agent suggests a package name with total confidence — and a fake package may be squatting on exactly that name.</p>
+<div class="lbl">THE MOVE</div><p class="b">Before installing anything the agent suggested, look the package up in the official registry yourself. Vet every new dependency: maintainer, last release, licence, exact-name check. Fewer dependencies is better.</p>
+<p class="line">The agent&#x27;s spelling is not evidence.</p></div></div><div class="sheet"><div class="card taste">
+<div class="top"><span class="chip">TASTE</span><span class="num">24 / 32</span></div>
+<h2 class="title">The taste test</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Two builds can both work, both pass every check, and differ completely in whether a human would enjoy using them. &quot;Best&quot; is not objective.</p>
+<div class="lbl">THE MOVE</div><p class="b">Taste is the judgement that one good option fits your situation better than another good option. The agent enumerates trade-offs fluently; it cannot know your client phones support at 11pm. That judgement, held and defended, is the deliverable.</p>
+<p class="line">&#x27;Best&#x27; is not objective. That is precisely why they need you.</p></div>
+<div class="card taste">
+<div class="top"><span class="chip">TASTE</span><span class="num">25 / 32</span></div>
+<h2 class="title">CRITIQUE.md</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Preferences stay verbal, so they die with the conversation and the nephew&#x27;s version wins by default.</p>
+<div class="lbl">THE MOVE</div><p class="b">Keep CRITIQUE.md: position, why, what you gave up, what would change your mind. Every entry must be arguable — a reasonable person could disagree. The difference between you and the nephew is the file.</p>
+<p class="line">Take responsibility for a position, in writing, with reasons that survive your absence.</p></div>
+<div class="card taste">
+<div class="top"><span class="chip">TASTE</span><span class="num">26 / 32</span></div>
+<h2 class="title">The four standing questions</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">At every fork, the agent&#x27;s reasoning gets adopted because it is fluent and present.</p>
+<div class="lbl">THE MOVE</div><p class="b">Ask four questions of every version: what is each optimising for; who will maintain it and what do they know; what does each do when the input is strange; what does it cost to change later?</p>
+<p class="line">Delegate the menu. Keep the choosing.</p></div>
+<div class="card taste">
+<div class="top"><span class="chip">TASTE</span><span class="num">27 / 32</span></div>
+<h2 class="title">The last 20%</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">&quot;It&#x27;s basically done — just make it feel right&quot; is where every practitioner smiles, because polish is the part that was never typing.</p>
+<div class="lbl">THE MOVE</div><p class="b">Directing polish — spacing, wording, the empty state, the error message — is management work. Brief it with examples, verify it like any other check.</p>
+<p class="line">The first 80% is a demo. The last 20% is the product.</p></div>
+<div class="card run">
+<div class="top"><span class="chip">RUN</span><span class="num">28 / 32</span></div>
+<h2 class="title">Decomposition</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">One big prompt asking for everything produces the confident average of a big thing: plausible, interlocking, and wrong in ways that surface when users arrive.</p>
+<div class="lbl">THE MOVE</div><p class="b">The agent builds features; you build the sequence. Ten small briefs, each with a check, each landing on verified ground. Dispatch one issue per conversation, in order — parallel is how the fog gets back in.</p>
+<p class="line">Big things are not built in one go. They are decomposed, dispatched, and verified.</p></div>
+<div class="card run">
+<div class="top"><span class="chip">RUN</span><span class="num">29 / 32</span></div>
+<h2 class="title">One idea per commit</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Commits grow into weekly dumps, and the history that was supposed to testify becomes noise.</p>
+<div class="lbl">THE MOVE</div><p class="b">If you can describe the change in one sentence, commit it in one sentence. Each commit is one idea; each message says what happened. When the audit comes, the commit messages are the department&#x27;s testimony.</p>
+<p class="line">Commit messages are the department&#x27;s testimony.</p></div>
+<div class="card run">
+<div class="top"><span class="chip">RUN</span><span class="num">30 / 32</span></div>
+<h2 class="title">The reviewer with fresh eyes</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">One agent building while the same agent self-reviews is a conflict of interest: the reviewer shares the blind spots of the builder.</p>
+<div class="lbl">THE MOVE</div><p class="b">Separate duties: a builder from the spec, a reviewer auditing the diff against the spec alone — never having seen the builder&#x27;s self-assurance — and sometimes a third, hostile pass. Findings ordered by consequence: DROPPED, INVENTED, BROKEN, RISKY, CLEAN. Overrule in writing, in DECISIONS.md, with the reason.</p>
+<p class="line">Fresh eyes are not a compliment; they are a control.</p></div>
+<div class="card run">
+<div class="top"><span class="chip">RUN</span><span class="num">31 / 32</span></div>
+<h2 class="title">The staff turnover</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The model gets upgraded, and the validated arrangement is assumed to still hold.</p>
+<div class="lbl">THE MOVE</div><p class="b">On every model change: re-run the replication test on two representative specs, re-run the full gate, re-audit one landed stage, and record the model and date in DECISIONS.md. The specs, checks, gates and skills are the durable layer.</p>
+<p class="line">The model is staff, and staff turn over.</p></div></div><div class="sheet"><div class="card run">
+<div class="top"><span class="chip">RUN</span><span class="num">32 / 32</span></div>
+<h2 class="title">Ship something true</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The last gate is permission — waiting until the thing is officially blessed.</p>
+<div class="lbl">THE MOVE</div><p class="b">Start from a real itch — yours, your club&#x27;s, your workplace&#x27;s. Fill the rollback sentence: &quot;if this goes wrong, I will ___ and the users will see ___.&quot; If the blank takes more than a minute to fill, ship behind a smaller blast radius first.</p>
+<p class="line">You do not need permission to ship. You need evidence it is true.</p></div></div>
+</body></html>

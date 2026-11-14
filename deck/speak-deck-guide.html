@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="UTF-8"><title>The one-page guide · The Speak Software Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans-Italic.ttf');font-style:italic}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--bg:#10243e;--acc-g:#7fd0e8;--ink:#1a1a1c;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Segoe UI',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:10pt;line-height:1.48;color:var(--ink);background:#e8e6df}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,20,30,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--bg);color:#fff;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc-g)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--acc-g);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--acc-g)}
+.top p{margin:3pt 0 0;color:rgba(255,255,255,.78);font-size:9.5pt}
+.top p b{color:#fff}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:6mm 10mm 0;gap:5mm 6mm;align-content:flex-start}
+.sec{border-top:2.5pt solid var(--acc);padding-top:3pt}
+.sec h2{font-weight:700;font-size:12.5pt;margin:1pt 0 1pt;display:flex;align-items:baseline;gap:6pt}
+.sec h2 span{font-family:var(--mono);font-size:7pt;letter-spacing:.13em;color:var(--acc);font-weight:700}
+.chk{display:flex;align-items:baseline;gap:3pt;padding:2.4pt 0;border-bottom:.5pt dotted var(--rule);font-size:8.8pt;line-height:1.35}
+.box{flex:none;display:inline-block;width:7pt;height:7pt;border:1pt solid #9a978c;border-radius:1.5pt;transform:translateY(0.8pt)}
+.lbl{flex:none;font-family:var(--mono);font-size:6pt;letter-spacing:.06em;color:var(--faint)}
+.lbl.y{color:var(--acc)}
+.start{font-family:var(--mono);font-size:6.8pt;letter-spacing:.08em;color:var(--acc);font-weight:700;margin-top:2.5pt;text-transform:uppercase}
+.close{flex:1;background:#EEF3F6;border:.6pt solid var(--rule);border-radius:2mm;padding:4mm}
+.close h3{font-family:var(--mono);font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;margin:0 0 2pt;font-weight:700}
+.close p{font-size:9.2pt;line-height:1.4}
+.wline{border-bottom:1pt solid #9a978c;height:6mm;margin:3pt 0 4pt}
+.foot{padding:2mm 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style></head><body>
+<div class="page">
+<div class="top">
+<div class="kicker">The Speak Software Deck · The one-page guide</div>
+<h1>Find your thinnest <em>section.</em></h1>
+<p>Answer for the team or the firm, pen in hand. The "not yet"s name where the work is. Be honest: nobody's marking it.</p>
+</div>
+<div class="grid"><div class="sec" style="--acc:#8A6A1F;width:calc(50% - 3mm)"><div class="sec">
+<h2><span>01 · THE DEPARTMENT</span></h2>
+<div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Standing instructions live in a versioned folder, not a settings page.</span></div><div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Every project starts in a repository with the front-door instructions in place.</span></div>
+<div class="start">Not yet? Work section 01 — cards 01–02</div>
+</div></div><div class="sec" style="--acc:#2F6B5E;width:calc(50% - 3mm)"><div class="sec">
+<h2><span>02 · SPEAK</span></h2>
+<div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>SPEC.md passes the replication test — a stranger could build from it alone.</span></div><div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>&quot;Done means&quot; is a list of runnable checks, not adjectives.</span></div>
+<div class="start">Not yet? Work section 02 — cards 03–04</div>
+</div></div><div class="sec" style="--acc:#B54A36;width:calc(50% - 3mm)"><div class="sec">
+<h2><span>03 · VERIFY</span></h2>
+<div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Receipts exist per checklist item: exact command, exact output, PASS or FAIL.</span></div><div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>One reported pass has been rerun at random, every session.</span></div>
+<div class="start">Not yet? Work section 03 — cards 05–06</div>
+</div></div><div class="sec" style="--acc:#4E5D6B;width:calc(50% - 3mm)"><div class="sec">
+<h2><span>04 · GUARD</span></h2>
+<div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Every change passes the same five gates, wired to run without memory.</span></div><div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>No secrets, personal data or marked-confidential material has entered a prompt.</span></div>
+<div class="start">Not yet? Work section 04 — cards 07–08</div>
+</div></div><div class="sec" style="--acc:#6B4E5F;width:calc(50% - 3mm)"><div class="sec">
+<h2><span>05 · TASTE</span></h2>
+<div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>CRITIQUE.md holds arguable positions with reasons that survive your absence.</span></div><div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Forks were chosen with the four standing questions, not by the agent&#x27;s preference.</span></div>
+<div class="start">Not yet? Work section 05 — cards 09–10</div>
+</div></div><div class="sec">
+<h2><span>06 · RUN</span></h2>
+<div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Big work is decomposed into one-conversation issues landing on verified ground.</span></div><div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The model upgrade checklist was run at the last staff change.</span></div>
+<div class="start">Not yet? Work section 06 — cards 11–12</div>
+</div><div class="close"><h3>The referee&#x27;s job</h3><p>The tools will keep changing. Deciding what to build, defining done, holding the bar, taste, and signing — none of that gets automated.</p><div class="wline"></div><p>Pull those cards. One section at a time, on real work.</p></div></div>
+<div class="foot"><span>You describe. It builds. You decide whether it's true.</span><span>Free to print and share · not for resale</span></div>
+</div></body></html>

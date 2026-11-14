@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="UTF-8"><title>Desk card · The Speak Software Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans-Italic.ttf');font-style:italic}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--bg:#10243e;--acc-g:#7fd0e8;--ink:#1a1a1c;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Segoe UI',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:9.6pt;line-height:1.42;color:var(--ink);background:#e8e6df}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,20,30,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--bg);color:#fff;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc-g)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--acc-g);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--acc-g)}
+.top p{margin:3pt 0 0;color:rgba(255,255,255,.78);font-size:9.5pt}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:6mm 10mm 0;gap:4mm 5mm;align-content:flex-start}
+.panel{width:calc(50% - 2.5mm);border-top:2.5pt solid var(--acc);padding-top:3pt}
+.panel.wide{width:100%}
+.panel h2{font-weight:700;margin:1pt 0 3pt;font-size:12.5pt;display:flex;align-items:baseline;gap:6pt}
+.panel h2 span{font-family:var(--mono);font-size:7pt;letter-spacing:.14em;color:var(--acc);font-weight:700}
+.panel p{margin:0 0 2.5pt;font-size:8.6pt;line-height:1.38}
+.panel.wide .cols{display:flex;gap:5mm}
+.panel.wide .cols>div{flex:1}
+.bottom{display:flex;gap:5mm;padding:3.5mm 10mm 5mm;border-top:.6pt solid var(--rule);margin:3mm 10mm 0}
+.bottom>div{flex:1}
+.bottom h3{font-family:var(--mono);font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;margin:0 0 2pt;font-weight:700}
+.bottom p{font-size:8.8pt;line-height:1.38}
+.foot{padding:2mm 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style></head><body>
+<div class="page">
+<div class="top">
+<div class="kicker">The Speak Software Deck · Desk card</div>
+<h1>Every card. <em>Every line.</em></h1>
+<p>The whole deck on one page. Pin it up; the lines do the remembering.</p>
+</div>
+<div class="grid"><div class="panel" style="--acc:#8A6A1F">
+<h2><span>01</span>The Department</h2>
+<p><b>The intern</b> — <i>Confidence and correctness are different qualities. The intern has only the first.</i></p><p><b>The repository rule</b> — <i>If it is not in the repository, it does not exist.</i></p><p><b>The specialist</b> — <i>Re-explaining is the tax. The context folder abolishes it.</i></p><p><b>The filing cabinet</b> — <i>The most sophisticated AI orchestration is a well-organised folder.</i></p><p><b>The mini CEO&#x27;s four duties</b> — <i>Delegation is not absolution.</i></p>
+</div><div class="panel" style="--acc:#2F6B5E">
+<h2><span>02</span>Speak</h2>
+<p><b>The spec is the program</b> — <i>Prompting is improvisation. Specification is authorship.</i></p><p><b>Done means</b> — <i>Done is undefined until it is runnable.</i></p><p><b>The hostile read</b> — <i>Every gesture-word is a gap.</i></p><p><b>Wishes into checks</b> — <i>The whole discipline is turning wishes into checks.</i></p><p><b>What you said, what you meant</b> — <i>The AI knows what you said. It does not know what you meant.</i></p>
+</div><div class="panel" style="--acc:#B54A36">
+<h2><span>03</span>Verify</h2>
+<p><b>The demo illusion</b> — <i>&#x27;It works&#x27; is the beginning of the sentence, not the end.</i></p><p><b>Receipts</b> — <i>The explanation is not the evidence.</i></p><p><b>Check one at random</b> — <i>Check one at random. Every time.</i></p><p><b>The fake test</b> — <i>A check that a fake could pass is checking nothing.</i></p><p><b>&quot;It sounds right&quot;</b> — <i>&#x27;It sounds right&#x27; is the most expensive sentence in AI-assisted work.</i></p>
+</div><div class="panel" style="--acc:#4E5D6B">
+<h2><span>04</span>Guard</h2>
+<p><b>The blast radius</b> — <i>Radius, not language or framework, decides how much process you owe.</i></p><p><b>Managed vibe coding</b> — <i>Vibe coding is one gear in a car that also has brakes, mirrors, and a licence.</i></p><p><b>The five gates</b> — <i>You cannot read every line. You can refuse to ship without a gate.</i></p><p><b>Commission the gate</b> — <i>A gate nobody understands gets disabled.</i></p><p><b>Tune the budget, keep the gate</b> — <i>Widening the gate to pass a change is the exact move this deck exists to prevent.</i></p><p><b>The flight recorder</b> — <i>One wrong move ruins nothing, if everything is recorded.</i></p><p><b>The three secrets</b> — <i>An unused key is an unlocked door.</i></p><p><b>Slopsquatting</b> — <i>The agent&#x27;s spelling is not evidence.</i></p>
+</div><div class="panel" style="--acc:#6B4E5F">
+<h2><span>05</span>Taste</h2>
+<p><b>The taste test</b> — <i>&#x27;Best&#x27; is not objective. That is precisely why they need you.</i></p><p><b>CRITIQUE.md</b> — <i>Take responsibility for a position, in writing, with reasons that survive your absence.</i></p><p><b>The four standing questions</b> — <i>Delegate the menu. Keep the choosing.</i></p><p><b>The last 20%</b> — <i>The first 80% is a demo. The last 20% is the product.</i></p>
+</div><div class="panel" style="--acc:#8A6A1F">
+<h2><span>06</span>Run</h2>
+<p><b>Decomposition</b> — <i>Big things are not built in one go. They are decomposed, dispatched, and verified.</i></p><p><b>One idea per commit</b> — <i>Commit messages are the department&#x27;s testimony.</i></p><p><b>The reviewer with fresh eyes</b> — <i>Fresh eyes are not a compliment; they are a control.</i></p><p><b>The staff turnover</b> — <i>The model is staff, and staff turn over.</i></p><p><b>Ship something true</b> — <i>You do not need permission to ship. You need evidence it is true.</i></p>
+</div></div>
+<div class="bottom"><div><h3>The Department of One</h3><p>One agent is an intern. A folder of instructions makes it a specialist. A cabinet of folders makes it a department — and the cabinet survives the accountant.</p></div><div><h3>The two questions</h3><p>What is the blast radius? How long will it live? Radius decides how much process you owe.</p></div><div><h3>Brief it well</h3><p>The department is waiting. Speak carefully, check everything, ship something true.</p></div></div>
+<div class="foot"><span>You describe. It builds. You decide whether it's true.</span><span>Free to print and share · not for resale</span></div>
+</div></body></html>
